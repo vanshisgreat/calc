@@ -1,0 +1,57 @@
+body{
+  background: linear-gradient(to right, #6E00FF, #B100FF);
+
+}
+
+button{
+    background-color: #0A0014
+;
+color: aliceblue;
+width: 100px;
+height: 50px;
+font-size: 21px;
+border-radius: 10px;
+
+}
+div{
+    
+    margin-bottom: 4.5px;
+}
+
+ .res{
+    width: 100px;
+ }
+ .soln{
+    margin-bottom: 10px;
+    background-color:#35007A
+;
+    width: 408px;
+    height: 70px;
+    border: 2px solid black;
+    align-content: end;
+    color: aliceblue;
+    font-size: 50px;;
+    border-radius: 10px;
+    box-shadow: 0 0 15px 3px rgba(17, 240, 106, 0.947);
+ }
+ .del{
+    width: 412px;
+   
+ }
+ button {
+    background: #080008;
+    color: white;
+    border: 1px solid #999;
+    padding: 15px;
+    box-shadow: 0 0 15px 3px rgba(22, 229, 129, 0.887);
+}
+.head{
+    color: aliceblue;
+   
+   text-shadow: 0 0 8px rgba(243, 8, 8, 0.94);
+
+
+}
+
+ 
+

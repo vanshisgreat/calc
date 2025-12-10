@@ -1,0 +1,116 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2 class="head"
+    >CALCULATER</h2>
+  <div>
+    <p class="soln">
+
+    </p>
+  </div>
+   <div class="maindiv">
+  <div class="div1">
+    <button onclick="clicked(0)">
+       0
+    </button>
+  <button onclick="clicked(1)">
+       1
+    </button>
+     <button onclick="clicked(2)">
+       2
+    </button>
+     <button onclick="clicked('+')">
+       +
+    </button>
+    
+   </div>
+   <div class="div2">
+    <button onclick="clicked(3)">
+        3
+    </button>
+     <button onclick="clicked(4)">
+       4
+    </button>
+     <button onclick="clicked(5)">
+       5
+    </button>
+      <button onclick="clicked('-')">
+       
+        -
+    </button>
+   </div>
+   <div class="div3">
+     <button onclick="clicked(6)">
+       6
+    </button>
+     <button onclick="clicked(7)">
+       7
+    </button>
+     <button onclick="clicked(8)">
+       8
+    </button>
+     <button onclick="clicked('*')">
+       x
+    </button>
+   </div>
+   <div class="div4">
+     <button onclick="clicked(9)">
+       9
+    </button>
+     <button onclick="calculate()" class="res">
+       Ans
+    </button>
+    <button onclick="delLast()">
+      Ea
+    </button>
+     <button onclick="clicked('/')" class="division">
+       /
+    </button>
+   </div>
+   <div>
+    <button onclick="delAll()" class="del">
+      CA
+    </button>
+   </div>
+   </div>
+   <script>
+  
+    function clicked(num){
+     document.querySelector(".soln").innerText
+     +=num;
+    
+    
+    } 
+    function delLast() {
+    let sol = document.querySelector(".soln");
+    sol.innerText = sol.innerText.slice(0, -1);
+   
+
+}
+function delAll(){
+   let sol = document.querySelector(".soln");
+   sol.innerText='';
+   
+}
+function calculate() {
+    let sol = document.querySelector(".soln");
+    let expression = sol.innerText;
+
+    try {
+        let result = eval(expression); 
+        sol.innerText = result;
+    } catch (err) {
+        sol.innerText = "Error";
+    }
+}
+
+
+   
+   </script>
+</body>
+</html>
